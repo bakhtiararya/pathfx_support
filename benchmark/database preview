@@ -1,0 +1,338 @@
+
+
+Drugs_labeled_for_AEs.txt
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Myocardial infarction	Hypertension	Pancreatitis	Hyperlipidemia	Tardive dyskinesia	Sepsis	Cardiac arrest	Cerebral infarction	Hemorrhage	Delirium	Pulmonary edema	Interstitial lung disease	Deep vein thrombosis	Thrombocytopenia	Peripheral neuropathy	Hemolytic anemia	Stevens-Johnson Syndrome	Agranulocytosis	Serotonin syndrome	Neuroleptic malignant syndrome	Visual acuity reduced	Gastric ulcer	Ventricular tachycardia	Edema	Generalized tonic-clonic seizure	Anaphylactic reaction	Proteinuria	Myopathy	Pneumonia	Sleep apnea syndrome	Sleep disorder	Hepatic necrosis	Completed suicide	QT Prolongation
+Estradiol	Ibuprofen	Ibuprofen	Bexarotene	Fluvoxamine	Ibuprofen	Diatrizoic Acid	Donepezil	Lycopodium clavatum	Lorazepam	Anhydrous Citric Acid	Famotidine	Estradiol	Famotidine	Insulin Human	Ibuprofen	Alprazolam	Famotidine	Tramadol	Dantrolene	Alprazolam	Ibuprofen	Atenolol	Famotidine	Famotidine	Famotidine	Ibuprofen	Acetaminophen	Ibuprofen	Activated Charcoal	Alprazolam	Ibuprofen	Alprazolam	Quetiapine
+Ibuprofen	Anhydrous Citric Acid	Orlistat	Estropipate	Trazodone	Trovafloxacin	Meperidine	Fosphenytoin	Sodium Cation	Promethazine	Diatrizoic Acid	Cyclophosphamide	Gabapentin	Ibuprofen	Metolazone	Tolazamide	Ibuprofen	Polythiazide	Sertraline	Lorazepam	Oxaprozin	Diphenhydramine	Dipyridamole	Alprazolam	Lorazepam	Achillea millefolium	Diatrizoic Acid	Chlorpheniramine	Trimetrexate	Antimony	Asian Ginseng	Trovafloxacin	Polythiazide	Azithromycin Anhydrous
+Diphenhydramine	Acetaminophen	Polythiazide	Sotalol	Doxepin	Cortisone	Atenolol	Recombinant Urokinase	Spore	Morphine	Calcium Chloride	Tamoxifen	Tamoxifen	Polythiazide	Penicillin Antibiotic	Penicillin Antibiotic	Trovafloxacin	Metolazone	Fluvoxamine	Methylphenidate	Levofloxacin	Acetaminophen	Sotalol	Clotrimazole	Ondansetron	Bark	Ketorolac Tromethamine	Dextromethorphan	Azacitidine	Aspidosperma quebracho-blanco	Insulin Human	Lomefloxacin	Reserpine	Fluconazole
+...
+Olopatadine		Morus alba Pollen								
+Ospemifene	Salsalate							Ferric					Lidocaine			Tocilizumab							Estradiol Cypionate		Morus rubra Pollen								
+Dofetilide	Gadopentetate							Pantothenic Acid					Menthol			FD&C Yellow No. 6							Dorzolamide		Olea europaea Pollen								
+Dolutegravir	Telavancin							Cefditoren					Danazol			Vemurafenib							Timolol		Picea pungens Pollen								
+Iothalamic Acid	Cabergoline							Mitoxantrone					Meperidine			Eslicarbazepine							Cyproheptadine		Pinus contorta Pollen								
+Ioxilan	Ferric							Meropenem Anhydrous					Saxagliptin Anhydrous			Pembrolizumab							Fibrinogen Adverse Event		Pinus echinata Pollen								
+Botulinum Toxin Type A	Flunisolide							Talc					Basiliximab			Nivolumab							Thrombin Human		Pinus elliottii Pollen								
+Ranibizumab	Cefpodoxime							Tretinoin					Loxapine			Phentermine							Omega-3-Acid Ethyl Esters		Pinus nigra Pollen								
+Darbepoetin Alfa	Zidovudine							Mechlorethamine					Decitabine			Recombinant Erythropoietin							Apomorphine		Pinus ponderosa Pollen								
+Pazopanib	Vinorelbine							Benzoic Acid					Eliglustat			Isonia
+
+
+===============================================================================================================================================================================================================
+
+
+drugs_to_sideEffect_cuis.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'DB00783': ['C0027051',
+  'C0149871',
+  'C0020473',
+  'C0007785',
+  'C0030305',
+  'C3278737',
+  'C0013604',
+  'C0019080',
+  'C0032285'],
+ 'DB01050': ['C3278737',
+  'C0030305',
+  'C0243026',
+  'C0038358',
+  'C0033687',
+
+
+pfx050120_all_assoc_to_nodes.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'Oculofaciocardiodental syndrome': {'BCOR'},
+'EPISODIC ATAXIA, TYPE 5': {'CACNB4'},
+'Disseminated coccidioidomycosis': {'IFNG', 'STAT1'},
+'Generalized tonic-clonic seizures with focal onset': {'EPM2A',
+'LGI1',
+'NHLRC1',
+'RELN',
+'SCN2A',
+'SLC12A5',
+'SLC22A5'},
+'Mild hearing impairment': {'MARS2'},
+'Hereditary nephrotic syndrome': {'ACTN4',
+
+
+pfx050120_all_phens_to_cuis.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'Tooth Abnormalities': 'C0040427',
+ 'Barakat syndrome': 'C1840333',
+ 'Schneckenbecken dysplasia': 'C0432194',
+ 'MACROTHROMBOCYTOPENIA, AUTOSOMAL DOMINANT, TUBB1-RELATED': 'C2751259',
+ 'Nuchal Rigidity': 'C1320474',
+ 'Tapered toe': 'C4021167',
+ 'Progressive microcephaly': 'C1850456',
+ 'Fungal keratitis': 'C1262117',
+ 'Liver Diseases, Parasitic': 'C0023897',
+
+
+all_phens_to_cuis.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'Hypospadias': 'C0848558',
+ 'Brugada Syndrome': 'C1142166',
+ 'Gout': 'C0018099',
+ 'Anemia, Sickle Cell': 'C0002895',
+ 'Behcet Syndrome': 'C0004943',
+ 'Craniosynostoses': 'C0010278',
+ 'Dermatitis, Atopic': 'C0011615',
+ 'Cryptorchidism': 'C0010417',
+ 'Cleft Lip': 'C0008924',
+ 'Cleft Palate': 'C0008925',
+ 'Hemochromatosis': 'C0018995',
+ 'Hirschsprung Disease': 'C0019569',
+
+
+pfx050120_cui_to_phens.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+defaultdict(list,
+            {'': ['Progressive myoclonus epilepsy',
+              'Progressive myoclonus epilepsy',
+              'Deafness, autosomal dominant nonsyndromic sensorineural 3',
+              'Deafness, autosomal dominant nonsyndromic sensorineural 3',
+              'Progressive myoclonus epilepsy',
+              'Progressive myoclonus epilepsy'],
+             'C4314198': ['Hemoglobin low',
+              'Hemoglobin low',
+              'Hemoglobin low',
+              'Hemoglobin low',
+              'Hemoglobin low',
+              ...
+              'Hemoglobin low',
+              'Hemoglobin low'],
+             'C0019191': ['Infectious Canine Hepatitis'],
+             'C4231515': ['Hypertension', 'Hypertension', 'Hypertension'],
+             'C2256526': ['Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors',
+              'Blood Coagulation Factors'],
+             'C0887833': ['Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+              'Carcinoma, Pancreatic Ductal',
+
+
+pfx050120_dbid2name.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'DB14244': 'Garden snail mucin',
+ 'DB02423': 'Thiopyrophosphate',
+ 'DB08458': '(4-BROMOPHENYL)[4-({(2E)-4-[CYCLOPROPYL(METHYL)AMINO]BUT-2-ENYL}OXY)PHENYL]METHANONE',
+ 'DB02501': 'N(2)-succinyl-L-arginine',
+ 'DB13391': 'Levoverbenone',
+ 'DB04411': 'Alpha-N-Dichloroacetyl-P-Aminophenylserinol',
+ 'DB08369': '1-(biphenyl-4-ylmethyl)-1H-imidazole',
+ 'DB05730': 'PMI-001',
+ 'DB01441': '5-Methoxy-N,N-diisopropyltryptamine',
+ 'DB14930': 'Alovudine F-18',
+ 'DB12259': 'CG-200745',
+
+
+pfx050120_dint.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+defaultdict(set,
+            {'Cyclohexyl-{4-[5-(3,4-Dichlorophenyl)-2-Piperidin-4-Yl-3-Propyl-3h-Imidazol-4-Yl]-Pyrimidin-2-Yl}Amine': {'MAPK10'},
+             'DB02501': {'astB'},
+             'DB08369': {'CYP2B6'},
+             'DB08206': {'TTR'},
+             'DB00285': {'ABCB1',
+              'ABCG2',
+              'CYP2D6',
+              'CYP3A4',
+              'SLC6A2',
+              'SLC6A3',
+              'SLC6A4'},
+             'AL5300': {'CA2'},
+             'MF101': {'ESR2'},
+
+
+pfx050120_merged_genes_to_cuis.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+defaultdict(set,
+            {'MYC': {'C0000768',
+              'C0001175',
+              'C0001206',
+              'C0001418',
+              'C0001430',
+              'C0001624',
+              'C0002395',
+
+
+pfx050120_merged_unique_cuis2genes.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+defaultdict(set,
+            {'': {'CSTB', 'EPM2A', 'GJB2', 'GJB6', 'NHLRC1', 'PRICKLE1'},
+             'C4314198': {'AASS',
+              'ABCA1',
+              'ABCB7',
+              'ABCD4',
+              'ACAD8',
+              'ACD',
+              ...
+                 'TP53',
+              'TP53BP1',
+              'VIM'},
+             'C4020889': {'CREBBP',
+              'DNAI1',
+              'EP300',
+              'MEGF8',
+              'PITX2',
+              'RAB23'},
+             'C1714535': {'DOCK1', 'PPM1AP1', 'TUSC3'},
+             'C0018784': {'AARS',
+              'ABCA4',
+              'ABCD1',
+              'ABHD12',
+              'ABHD5',
+              ...
+
+
+
+pfxDB050620_dbid2name.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'DB06897': '3-[3-chloro-5-(5-{[(1S)-1-phenylethyl]amino}isoxazolo[5,4-c]pyridin-3-yl)phenyl]propan-1-ol',
+ 'DB08258': '6-{[(CYCLOHEXYLAMINO)CARBONYL]AMINO}HEXANOIC ACID',
+ 'DB03295': 'Glutathionylspermidine',
+ 'DB04767': 'N-[1-(4-CARBAMIMIDOYL-BENZYLCARBAMOYL)-3-METHYLSULFANYL-PROPYL]-3-HYDROXY-2-PROPOXYAMINO-BUTYRAMID',
+ 'DB08719': '5-(5-(6-CHLORO-4-(4,5-DIHYDRO-2-OXAZOLYL)PHENOXY)PENTYL)-3-METHYL ISOXAZOLE',
+ 'DB12170': 'Veledimex',
+ 'DB02108': '2-Aminoethanimidic Acid',
+ 'DB01957': '3-Chlorophenol',
+ 'DB14766': 'Etrasimod',
+
+
+
+pfxDB050620_dint.pkl
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+defaultdict(set,
+            {'2-deoxyglucose': {'SLC2A1'},
+             'DB06897': {'PLK1'},
+             'Abatacept': {'CD80', 'CD86'},
+             'Saracatinib': {'CYP3A4'},
+             'ONT-093': {'ABCB1'},
+             'Protirelin': {'TRHR'},
+             'DB11359': {'ALB'},
+             'Estradiol cypionate': {'ABCB1',
+              'ABCC10',
+              'ABCG2',
+
+
+
+===============================================================================================================================================================================================================
+
+
+drugbank_id_and_drug_name_source_to_gene_symbol_target_dict
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'DB00001': ['F2'],
+ 'DB00002': ['C1R',
+  'C1QB',
+  'C1QC',
+  'C1S',
+  'EGFR',
+  'FCGR3B',
+  'C1QA',
+  'FCGR3A',
+  'FCGR1A',
+  'FCGR2A',
+  'FCGR2B',
+  'FCGR2C'],
+ 'DB00004': ['IL2RA', 'IL2RB', 'IL2RG'],
+ 'DB00005': ['C1R'
+
+
+
+drug_name_to_drugbank_id_dict
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'Lepirudin': 'DB00001',
+ 'Bivalirudin': 'DB00006',
+ 'Antihemophilic factor, human recombinant': 'DB00025',
+ 'Drotrecogin alfa': 'DB00055',
+ 'Coagulation Factor IX (Recombinant)': 'DB00100',
+ 'Menadione': 'DB00170',
+ 'Argatroban': 'DB00278',
+ 'Proflavine': 'DB01123',
+ 'Zinc': 'DB01593',
+ "2-{2-hydroxy-[1,1'-biphenyl]-3-yl}-1H-1,3-benzodiazole-5-carboximidamide": 'DB01725',
+ 'Beta-(2-Naphthyl)-Alanine': 'DB0
+
+
+
+drugbank_id_to_drug_name_dict
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{'DB00001': 'Lepirudin',
+ 'DB00006': 'Bivalirudin',
+ 'DB00025': 'Antihemophilic factor, human recombinant',
+ 'DB00055': 'Drotrecogin alfa',
+ 'DB00100': 'Coagulation Factor IX (Recombinant)',
+ 'DB00170': 'Menadione',
+ 'DB00278': 'Argatroban
+
+
+gene_symbol_target_to_drug_names_source_dict
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'A103R': ["Guanosine-5'-Triphosphate", "Diguanosine-5'-Triphosphate"],
+ 'A1BG': ['Zinc', 'Copper', 'Zinc acetate', 'Zinc chloride'],
+ 'A2M': ['Zinc',
+  'Copper',
+  'Zinc acetate',
+  'Zinc chloride',
+  'Cisplatin',
+  'Bacitracin',
+  'Silver',
+  'Mangafodipir',
+  'Becaplermin',
+  'Ocriplasmin'],
+ 'AADACL2': ['Gibberellic acid', 'GIBBERELLIN A4'],
+ 'AADAT': ['Glutamic acid', 'Pyridoxal phosphate'],
+ 'AAK1': ['Fostamatinib'],
+ 'AANAT': ['Cannabidiol',
+  'Cannabidiol',
+
+
+
+gene_symbol_target_to_drugbank_ids_source_dict
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'A103R': ['DB04137', 'DB03931'],
+ 'A1BG': ['DB01593', 'DB09130', 'DB14487', 'DB14533'],
+ 'A2M': ['DB01593',
+  'DB09130',
+  'DB14487',
+  'DB14533',
+  'DB00515',
+  'DB00626',
+  'DB12965',
+  'DB06796',
+  'DB00102',
+  'DB08888'],
+ 'AADACL2': ['DB07814', 'DB07815'],
+ 'AADAT': ['DB00142', 'DB00114'],
+ 'AAK1': ['DB12010'],
+ 'AANAT': ['DB09061',
+  'DB09061',
+  'DB14009',
+  'DB14011',
+  'DB01777',
+
+
+
+
+
+
+
+
