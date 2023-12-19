@@ -63,9 +63,6 @@ List things you need to use the software and how to install them.
 ### Installation
 
 1. Clone the repo
-   ```sh
-   git clone https://github.com/aryastark5/network_analysis.git
-   ```
 2. Download the entire inputs/ folder from the [network_analysis Google Drive Folder](https://drive.google.com/drive/u/1/folders/15Y8fLZutM89gyrMP6EVtuR6t_9Bc9HSi)
 3. Open Anaconda environment and run JuypterLab
 4. Open `perform_network_analysis.ipynb` on the JuypterLab Notebook
@@ -91,12 +88,8 @@ Distributed under the License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Arya Mirpour 
+Arya Bakhtiar 
 email: bakhtiararya [at] berkeley.edu
-
-Project Link: [https://github.com/aryastark5/network_analysis](https://github.com/aryastark5/network_analysis)
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
