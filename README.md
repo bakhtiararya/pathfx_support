@@ -53,6 +53,49 @@ For Binned Score Analysis, the following information is provided as output:
 - .CSV table containing information about the number of proteins, number of unique proteins, edge score stat, and degree stat for a specific bin
 - .PNG files showing boxplots for the distribution of protein degrees & edge scores within a specific bin and bar plots for the stats shown in the .CSV file 
 
+### Questions of Interest
+
+* How does the input data, interaction network or drug-binding information, help our ability to detect side effects? 
+* For a given network of <Drug> in Version 1.0 of PathFX, does PathFX identify the specific phenotype associated with <Phenotype/Adverse Event>? Also, is the phenotype seen in Version 1 also present in Version 2.0?
+* Because not all genes for a given CUI/Phenotype/Adverse Event appear in a network graph:
+  * What genes are associated with <Phenotype/Adverse Event> ?
+  * In the output association table, which network genes are associated with <Phenotype/Adverse Event> ?
+* Given the output of the `compare_versions.py` script:
+  * Which CUI terms appear and don't?
+  * What is the significance of the association? What are the genes that are associated with <Drug>?
+  * Which version has more data? (p-value shrinks – means more significance)
+  
+### Information about output files
+
+For Database Analysis, the following information is provided as output:
+* DataFrames containing information about the ingrediants and Adverse Events in the `Drugs_labeled_for_AEs.txt` file
+* Dictionaries for Drug Name & ID, Ingredient & Adverse Event Table (Table given by FDA colleague)  
+* ”cleaner” versions of all of the files in the important_database_files/ folder 
+
+For Association Table Analysis, the following information is provided as output:
+
+* Parent Folder: output_association_table_analysis/c/
+  * output_all_cui_info/
+    * Folder contains text and CSV files regarding all th CUIs present in both versions of PathFX 
+  * output_all_neigh_genes_involved_info/ 
+    * Folder that contains information regarding the frequency, similarities, and distinction of all the neighborhood genes present in the "genes" column of the association table for both PathFX versions. 
+  * output_neigh_genes_for_each_cui_info/
+    * Folder contains information regarding genes for each specific CUI present in the neighborhood genes of the association table. Comparison is only made in regards to genes mapping to the same CUI for both PathFX versions. 
+  * output_numeric_cols_in_association_table_info/
+    * Folder contains statistic information and graphs for each of the numeric columns present in the association table 
+  * output_sheets_gene_and_cui_analysis/ - Incorrect Information Present
+    * The information provided by this folder comes from the sheets of the .xls files that are not named <Drug> all CUI's v1 and <Drug> all CUI's v2.
+  * .CSV "super Tables" which contain columns for many of the calculations done to interpret the association table in both versions of PathFX 
+  * <DRUG>_stats_info - Quick Summary Text File
+    *  A text file that contains a quick summary information for the drug after comparing it with both versions of PathFX
+
+Note: For any graph or table, the script usually outputs 2 versions: one where all the CUIs from both PathFX versions are present and one where only the common/intersecting CUIs from both PathFX versions are present (The graphs regarding common/intersecting CUIs from both PathFX versions are less crowded and easier to see). 
+
+  
+For Adverse Events Analysis, the following information is provided as output:
+  
+* graphs and CSV files of CUIs that are present both in the super tables constructed from the `association_table_analysis.ipynb` script and from the analysis performed on the `Drugs_labeled_for_AEs.txt file`
+* output tables for Fluoxetine, and Paroxetine, and Ibuprofen
 
 
 ### Built With
