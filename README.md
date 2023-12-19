@@ -2,10 +2,14 @@
 
 Author: Arya Bakhtiar
 
+## Version
+Last update: March 2023
 
-## Google Drive Folder Link
+## Data Files
 
-Due to memory constraints on Github, all Inputs and Output Folders are posted to the following Google Drive folder. Must require permission to access the folder.
+Due to memory constraints on Github, all Inputs and Output Folders are posted to Labratory Drive folder. Must require permission to access the folder.
+
+The support files for this project exceeds > 100GB in size. Please reach out for further inquiry on the project. 
 
 ## About The Project
 
