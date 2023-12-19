@@ -1,4 +1,4 @@
-# PathFX Spport
+# PathFX Support Repo
 
 Author: Arya Bakhtiar
 
