@@ -1,5 +1,7 @@
 # PathFX Support Repo
 
+![alt text](pathfx_logo.png)
+
 Author: Arya Bakhtiar
 
 ## Version
