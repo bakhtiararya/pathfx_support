@@ -52,18 +52,6 @@ For Threshold Analysis, the following information is provided as output:
 For Binned Score Analysis, the following information is provided as output:
 - .CSV table containing information about the number of proteins, number of unique proteins, edge score stat, and degree stat for a specific bin
 - .PNG files showing boxplots for the distribution of protein degrees & edge scores within a specific bin and bar plots for the stats shown in the .CSV file 
-
-### Questions of Interest
-
-* How does the input data, interaction network or drug-binding information, help our ability to detect side effects? 
-* For a given network of <Drug> in Version 1.0 of PathFX, does PathFX identify the specific phenotype associated with <Phenotype/Adverse Event>? Also, is the phenotype seen in Version 1 also present in Version 2.0?
-* Because not all genes for a given CUI/Phenotype/Adverse Event appear in a network graph:
-  * What genes are associated with <Phenotype/Adverse Event> ?
-  * In the output association table, which network genes are associated with <Phenotype/Adverse Event> ?
-* Given the output of the `compare_versions.py` script:
-  * Which CUI terms appear and don't?
-  * What is the significance of the association? What are the genes that are associated with <Drug>?
-  * Which version has more data? (p-value shrinks – means more significance)
   
 ### Information about output files
 
