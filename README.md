@@ -29,7 +29,25 @@ Because the scores in the STRING database were out of 1000,  ended up normalizin
 | FILTERED_FOR_SAME_EDGES | Only interactions (edges in network graph) that were present in both STRING and PathFX were selected for analysis |
 | FILTERED_FOR_CLOSE_NODES | All the shared common proteins between PathFX and STRING + whatever nodes those common shared proteins connect to; PathFX and STRING will show a difference in smaller set of proteins - this as a "cleaner cut version" of the NOT_FILTER since STRING has so many other proteins not even present PathFX | 
 
-The `perform_network_analysis.ipynb` executes all the notebooks and outputs everything in one execution. It takes 50 min for everything to be finished. It is also possible to run each filter analysis one-by-one instead if needed. 
+| Analysis Type | Description |
+| :---        |     :---    |
+| Threshold Analysis | filters edge scores given a specific threshold interval and then provides information about the protein interaction dataset |
+| Binned Score Analysis | places each record in the interaction table into a bin based on the value of the edge score and then provides information about the protein interaction dataset |
+
+For Threshold Analysis, the following information is provided as output:
+- For each Threshold Value (folders - threshold_val_X.XX): 
+  - .CSV tables for node degree stats, edge score stats, and relevant protein interactions
+  - .PNG files for node degree distribution, edge score distribution
+- For Summary (folder - threshold_analysis)
+  - .CSV table of various stats for degree, edge score, number of unique proteins, and number of interactions
+  - .PNG files showing bar plots for the stats shown in the .CSV file
+- Examples
+  - for "from_0.70_to_1.0_step_0.01", edge scores are kept for [0.7, 1.0), [0.71, 1.0), .. etc
+  - for "from_0.90_to_0.91_step_0.001", edge scores are kept for [0.9, 0.91), [0.901, 0.91), .. etc  
+
+For Binned Score Analysis, the following information is provided as output:
+- .CSV table containing information about the number of proteins, number of unique proteins, edge score stat, and degree stat for a specific bin
+- .PNG files showing boxplots for the distribution of protein degrees & edge scores within a specific bin and bar plots for the stats shown in the .CSV file 
 
 
 
