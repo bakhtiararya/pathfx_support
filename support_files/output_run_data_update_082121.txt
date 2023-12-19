@@ -1,0 +1,101 @@
+
+
+
+
+Initial run after 1st email with instructions 
+
+========================================================================================================================================================================
+
+(base) aryahaghighi@Aryas-MacBook-Pro scripts % python run_data_update_082121.py
+python create_interactome.py -data_file ../data/arya_test/arya_string_scored_interactome_data_merged.txt -a_name pfx_string_test
+create_interactome.py:13: DeprecationWarning: 'U' mode is deprecated
+  for l in open(args.fname,'rU').readlines():
+
+Created interactome: 2021-07-21 14:35:32
+python bin_data_mp.py -data_file ../rscs/pfx_string_test_unique_nodes.pkl -a_name pfx_string_test -num_cores 12
+python create_drug_bank_data.py -a_name pfx_string_test -proteins_file ../data/proteins_050120.tsv -drug_file ../data/drugbank_050120.tsv -map_file ../data/uniprot_to_gene_name_table.txt
+
+finished new DrugBank data
+
+Starting to draw networks at input thresholds
+python run_depth_first_search_mp.py -intome ../rscs/pfx_string_test_interactome.pkl -a_name pfx_string_test -thr 0.99999 -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+finished network at: 0.99999	2021-07-21 14:42:08
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/pfx_string_test_0.99999_node_to_hashID.pkl -a_name pfx_string_test -thr 0.99999 -n2nbhd ../rscs/pfx_string_test_0.99999_node_to_nbhd.pkl -thr_dir ../rscs/pfx_string_test_0.99999_thr_dir.pkl -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.99999	2021-07-21 14:45:36
+python run_depth_first_search_mp.py -intome ../rscs/pfx_string_test_interactome.pkl -a_name pfx_string_test -thr 0.9999 -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+finished network at: 0.9999	2021-07-21 14:51:05
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/pfx_string_test_0.9999_node_to_hashID.pkl -a_name pfx_string_test -thr 0.9999 -n2nbhd ../rscs/pfx_string_test_0.9999_node_to_nbhd.pkl -thr_dir ../rscs/pfx_string_test_0.9999_thr_dir.pkl -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.9999	2021-07-21 14:54:31
+python run_depth_first_search_mp.py -intome ../rscs/pfx_string_test_interactome.pkl -a_name pfx_string_test -thr 0.9995 -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+finished network at: 0.9995	2021-07-21 15:00:33
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/pfx_string_test_0.9995_node_to_hashID.pkl -a_name pfx_string_test -thr 0.9995 -n2nbhd ../rscs/pfx_string_test_0.9995_node_to_nbhd.pkl -thr_dir ../rscs/pfx_string_test_0.9995_thr_dir.pkl -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.9995	2021-07-21 15:03:48
+
+Finished networks and interaction specificity, comparing thresholds
+python plot_int_spec.py -a_name pfx_string_test -thr_values ../rscs/pfx_string_test_thresh_val_dic.pkl -thr_hash ../rscs/pfx_string_test_thresh_hash_dic.pkl
+
+
+========================================================================================================================================================================
+
+
+(base) aryahaghighi@Aryas-MacBook-Pro scripts % python run_data_update_082121.py
+python create_interactome.py -data_file ../data/arya_test/arya_string_scored_interactome_data_merged.txt -a_name pfx_string_test
+create_interactome.py:13: DeprecationWarning: 'U' mode is deprecated
+  for l in open(args.fname,'rU').readlines():
+
+Created interactome: 2021-07-21 16:04:56
+python bin_data_mp.py -data_file ../rscs/pfx_string_test_unique_nodes.pkl -a_name pfx_string_test -num_cores 12
+python create_drug_bank_data.py -a_name pfx_string_test -proteins_file ../data/proteins_050120.tsv -drug_file ../data/drugbank_050120.tsv -map_file ../data/uniprot_to_gene_name_table.txt
+
+finished new DrugBank data
+
+Starting to draw networks at input thresholds
+python run_depth_first_search_mp.py -intome ../rscs/pfx_string_test_interactome.pkl -a_name pfx_string_test -thr 0.999 -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+finished network at: 0.999	2021-07-21 16:09:53
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/pfx_string_test_0.999_node_to_hashID.pkl -a_name pfx_string_test -thr 0.999 -n2nbhd ../rscs/pfx_string_test_0.999_node_to_nbhd.pkl -thr_dir ../rscs/pfx_string_test_0.999_thr_dir.pkl -gbbin ../rscs/pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.999	2021-07-21 16:12:26
+
+Finished networks and interaction specificity, comparing thresholds
+python plot_int_spec.py -a_name pfx_string_test -thr_values ../rscs/pfx_string_test_thresh_val_dic.pkl -thr_hash ../rscs/pfx_string_test_thresh_hash_dic.pkl
+
+finished plotting: 2021-07-21 16:12:27
+(base) aryahaghighi@Aryas-MacBook-Pro scripts % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

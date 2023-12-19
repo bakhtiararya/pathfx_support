@@ -1,0 +1,33 @@
+(base) aryahaghighi@Aryas-MacBook-Pro scripts % python run_data_update_082121.py
+python create_interactome.py -data_file ../data/arya_test/filtered_arya_string_scored_interactome_data_merged.txt -a_name filtered_pfx_string_test
+create_interactome.py:13: DeprecationWarning: 'U' mode is deprecated
+  for l in open(args.fname,'rU').readlines():
+
+Created interactome: 2021-07-22 01:33:53
+python bin_data_mp.py -data_file ../rscs/filtered_pfx_string_test_unique_nodes.pkl -a_name filtered_pfx_string_test -num_cores 12
+python create_drug_bank_data.py -a_name filtered_pfx_string_test -proteins_file ../data/proteins_050120.tsv -drug_file ../data/drugbank_050120.tsv -map_file ../data/uniprot_to_gene_name_table.txt
+
+finished new DrugBank data
+
+Starting to draw networks at input thresholds
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.99999 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+finished network at: 0.99999	2021-07-22 01:34:09
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/filtered_pfx_string_test_0.99999_node_to_hashID.pkl -a_name filtered_pfx_string_test -thr 0.99999 -n2nbhd ../rscs/filtered_pfx_string_test_0.99999_node_to_nbhd.pkl -thr_dir ../rscs/filtered_pfx_string_test_0.99999_thr_dir.pkl -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.99999	2021-07-22 01:35:49
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.99995 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+finished network at: 0.99995	2021-07-22 01:36:04
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/filtered_pfx_string_test_0.99995_node_to_hashID.pkl -a_name filtered_pfx_string_test -thr 0.99995 -n2nbhd ../rscs/filtered_pfx_string_test_0.99995_node_to_nbhd.pkl -thr_dir ../rscs/filtered_pfx_string_test_0.99995_thr_dir.pkl -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.99995	2021-07-22 01:38:12
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.9999 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+finished network at: 0.9999	2021-07-22 01:38:32
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/filtered_pfx_string_test_0.9999_node_to_hashID.pkl -a_name filtered_pfx_string_test -thr 0.9999 -n2nbhd ../rscs/filtered_pfx_string_test_0.9999_node_to_nbhd.pkl -thr_dir ../rscs/filtered_pfx_string_test_0.9999_thr_dir.pkl -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.9999	2021-07-22 01:40:53
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.9995 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+finished network at: 0.9995	2021-07-22 01:41:13
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/filtered_pfx_string_test_0.9995_node_to_hashID.pkl -a_name filtered_pfx_string_test -thr 0.9995 -n2nbhd ../rscs/filtered_pfx_string_test_0.9995_node_to_nbhd.pkl -thr_dir ../rscs/filtered_pfx_string_test_0.9995_thr_dir.pkl -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.9995	2021-07-22 01:43:14
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.999 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+finished network at: 0.999	2021-07-22 01:43:34
+python calc_dfs_specificity_h5py.py -n2hash ../rscs/filtered_pfx_string_test_0.999_node_to_hashID.pkl -a_name filtered_pfx_string_test -thr 0.999 -n2nbhd ../rscs/filtered_pfx_string_test_0.999_node_to_nbhd.pkl -thr_dir ../rscs/filtered_pfx_string_test_0.999_thr_dir.pkl -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
+calculated specificity at: 0.999	2021-07-22 01:45:37
+python run_depth_first_search_mp.py -intome ../rscs/filtered_pfx_string_test_interactome.pkl -a_name filtered_pfx_string_test -thr 0.995 -gbbin ../rscs/filtered_pfx_string_test_genes_by_bin.pkl
